@@ -6,7 +6,7 @@ web访问输出 hello world, 并可获取到客户端ip地址 , 服务器ip地�
 #### Python3: Python36
 #### Django: 2.0
 
-### 示例
+## 示例
 #### [root@master ~]# curl http://10.0.6.2
 #### hello world! Your ip is: 10.0.6.2, ServerHostname: DESKTOP-OCO3THD, ServerIP: 10.0.6.2
 

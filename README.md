@@ -1,5 +1,5 @@
 # helloworld
-#### web访问输出 hello world, 并可获取到客户端ip地址 , 服务器ip地址和主机名；适合用django做实验,例如用作docker、kubernetes的简单demo使用
+#### Web访问输出 hello world，并可获取到客户端ip地址、服务器ip地址、主机名以及打印随机数到日志中；可用作docker、kubernetes的简单demo以及zabbix监控日志中的随机数并报警。
 
 ## 环境说明
 ```
@@ -21,6 +21,7 @@ docker run --rm -it -p 8000:8000 --name=helloworld helloworld
 ## 随机数
 ```
 # tail -f random-number.log
+
 2020-08-21 03:14:04,039 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 174 -
 2020-08-21 03:14:06,040 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 126 -
 2020-08-21 03:14:08,042 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 164 -

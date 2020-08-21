@@ -2,13 +2,33 @@
 #### web访问输出 hello world, 并可获取到客户端ip地址 , 服务器ip地址和主机名；适合用django做实验,例如用作docker、kubernetes的简单demo使用
 
 ## 环境说明
-#### os: CentOS 7
-#### Python3: Python36
-#### Django: 2.0
+```
+os: CentOS 7
+Python3: Python36
+Django: 2.0
+``` 
 
 ## 示例
-#### [root@master ~]# curl http://10.0.6.2
-#### hello world! Your ip is: 10.0.6.2, ServerHostname: DESKTOP-OCO3THD, ServerIP: 10.0.6.2
+``` 
+# curl http://10.0.6.2
 
+hello world! Your ip is: 10.0.6.2, ServerHostname: DESKTOP-OCO3THD, ServerIP: 10.0.6.2
+```
 ## docker
-#### docker run --rm -it -p 8000:8000 --name=helloworld helloworld
+```
+docker run --rm -it -p 8000:8000 --name=helloworld helloworld
+```
+## 随机数
+```
+# tail -f random-number.log
+```
+```
+2020-08-21 03:14:04,039 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 174 -
+2020-08-21 03:14:06,040 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 126 -
+2020-08-21 03:14:08,042 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 164 -
+2020-08-21 03:14:10,045 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 126 -
+2020-08-21 03:14:12,049 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 180 -
+2020-08-21 03:14:14,052 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 190 -
+2020-08-21 03:14:16,054 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 130 -
+2020-08-21 03:14:18,057 140506310596352 WARNING - 线程已经启动，正在打印随机数: - 188 -
+```

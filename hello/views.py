@@ -5,7 +5,7 @@ import random
 import socket
 import time
 
-logging.basicConfig(format="%(asctime)s %(thread)d %(levelname)s - %(message)s", filename="access-hello.log")
+logging.basicConfig(format="%(asctime)s %(thread)d %(levelname)s - %(message)s", filename="random-number.log")
 
 
 def hello(request):
